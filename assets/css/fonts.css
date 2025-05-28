@@ -1,0 +1,12 @@
+/* assets/css/fonts.css */
+@font-face {
+  font-family: 'EE-Display';
+  src: url('/fonts/ee-display.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.display-font {
+  font-family: 'EE-Display', 'Arial', sans-serif;
+}

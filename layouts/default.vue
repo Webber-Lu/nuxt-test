@@ -1,23 +1,21 @@
 <!-- layouts/default.vue -->
-<template>
-  <div class="layout">
-    <AppHeader />
-    <main class="main-content">
-      <slot />
-    </main>
-    <AppFooter />
-  </div>
-</template>
-
-<style scoped>
-.layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex: 1;
-  padding: 20px;
-}
-</style>
+<script setup>
+// 動態載入 Google Fonts
+useHead({
+  link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: ''
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap'
+    }
+  ]
+})
+</script>
